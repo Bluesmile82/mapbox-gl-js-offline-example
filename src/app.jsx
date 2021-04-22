@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './style';
-import './mapbox-gl.css';
-import './mapbox-gl';
-
+import 'mapbox-gl/dist/mapbox-gl.css';
+import mapboxgl from 'mapbox-gl';
 function App() {
+  mapboxgl.accessToken = '<your access token here>';
   var map = new mapboxgl.Map({
     container: 'map',
     center: [8.3221, 46.5928],
@@ -11,7 +11,7 @@ function App() {
     style: style
   });
 
-  map.addControl(new mapboxgl.Navigation());
+  map.addControl(new mapboxgl.NavigationControl());
 
   return (
     <div className="App">

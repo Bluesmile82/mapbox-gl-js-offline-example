@@ -57,15 +57,6 @@ export default {
       "fill-color": "#F0F8FF"
     }
   },{
-    "id": "area-white",
-    "type": "fill",
-    "source": "countries",
-    "filter":["in","ADM0_A3",'ATA'],
-    "source-layer": "country",
-    "paint": {
-      "fill-color": "#F0F8FF"
-    }
-  },{
     "id": "area-red",
     "type": "fill",
     "source": "countries",
