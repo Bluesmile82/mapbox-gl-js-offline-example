@@ -212,7 +212,15 @@ export default {
       "text-halo-color": "#fff",
       "text-halo-width": 1.5
     }
-  },{
+  },
+  {
+    id: 'custom-layers',
+    type: 'background',
+    paint: {
+      'background-opacity': 0
+    }
+  },
+  {
     "id": "geo-lines-lables",
     "type": "symbol",
     "source": "countries",
